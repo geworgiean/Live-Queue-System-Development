@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import { supabase } from "../../../lib/supabase";
 import { useState } from "react";
 
@@ -40,6 +41,9 @@ export default function DoctorPage() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-950">
+            <Link href="/" className="inline-flex items-center text-blue-400 hover:text-blue-100 mb-6 font-medium">
+                ← Վերադառնալ Գլխավոր
+            </Link>
             <h1 className="text-2xl font-bold mb-8 text-white">Բժշկի կառավարման վահանակ</h1>
             <button
                 onClick={callNext}

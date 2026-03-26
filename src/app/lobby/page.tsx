@@ -1,5 +1,6 @@
 'use client';
 
+import Link from "next/link";
 import { supabase } from "../../../lib/supabase";
 import { useEffect, useState } from "react";
 
@@ -56,6 +57,12 @@ export default function LobbyPage() {
 
     return (
         <div className="flex h-screen bg-gray-900 text-white">
+            <Link 
+        href="/" 
+        className="absolute top-6 left-6 text-gray-500 hover:text-white transition-colors border border-gray-700 px-4 py-2 rounded-lg"
+      >
+        ← Ելք
+      </Link>
             {/* Ձախ մաս - Ընթացիկ համարը */}
             <div className="flex-1 flex flex-col items-center justify-center border-r border-gray-800">
                 <h1 className="text-4xl font-light mb-10 tracking-widest uppercase text-gray-400">Ընթացիկ Համարը</h1>
