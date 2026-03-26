@@ -39,8 +39,8 @@ export default function DoctorPage() {
   };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-            <h1 className="text-2xl font-bold mb-8 text-black">Բժշկի կառավարման վահանակ</h1>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-950">
+            <h1 className="text-2xl font-bold mb-8 text-white">Բժշկի կառավարման վահանակ</h1>
             <button
                 onClick={callNext}
                 disabled={loading}
